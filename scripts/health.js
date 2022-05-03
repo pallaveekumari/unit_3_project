@@ -1,5 +1,10 @@
 
 
+import {appendData} from "./fetch_pg.js";
+
+
+// Data Collection
+
 let objData = []
 
 function healthData (n,i,p){
@@ -9,7 +14,6 @@ this.price=p;
 }
 
 const p1 =new healthData('NATURE VLY CRU GRA BAR RST ALMD 500g - 1 Pc','https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/e8042587-6211-4304-b8e3-c681a5ea90cb_425x425.jpg',324);
-// console.log(p1)
 const p2=new healthData('KAPIVA A2 DESI GHEE 500G - 1 Pc','https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/7d86dd9a-b6de-439b-a883-071cda5cf8c2_425x425.jpg',1499);
 const p3 =new healthData ('NATURES PISTA 500g - 1 Pc','https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/4d20f2cb-b76d-4658-8922-993cf0ad9b4e_425x425.jpg',699);
 const p4 =new healthData ('HA PREMIUM SAUDI DATES 500G - 1 Pc','https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/114bf967-c319-4c20-88cb-95c4472816b7_425x425.jpg',669);
@@ -36,3 +40,11 @@ const p20 =new healthData('HA WALNUT KERNEL 250g - 1 Pc','https://d1z88p83zuviay
 objData.push(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20)
 
 console.log(objData)
+
+
+
+// Calling the append function
+
+let rightBox = document.getElementById("rightBox")
+
+appendData(objData,rightBox)

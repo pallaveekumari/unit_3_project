@@ -2,7 +2,7 @@
 
 let appendData = (data,container) =>{
 
-    data.array.forEach(({name, img_url, price}) => {
+    data.forEach(({name, img_url, price}) => {
         
         let box = document.createElement("div")
         box.setAttribute("id","box")
@@ -29,10 +29,17 @@ let appendData = (data,container) =>{
         prices.innerText = "MRP ₹" + price;
 
         let btn = document.createElement("button")
-        btn
+        btn.setAttribute("id","btn");
+        btn.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>'+ " " + "ADD"
 
+        price_div.append(prices,btn)
+        box.append(img,time,title,quantity,price_div)
+        container.append(box)
+ 
 
 
         
     });
 }
+
+export {appendData}
