@@ -1,6 +1,6 @@
 
 
-import {appendData} from "./fetch_pg.js";
+import {appendData2} from "./fetch_pg.js";
 
 
 // Data Colloection
@@ -42,7 +42,7 @@ let objData=[]
 
 
   // Calling the append function
-  
+
 let rightBox = document.getElementById("rightBox")
 
-appendData(objData,rightBox)
+appendData2(objData,rightBox)
