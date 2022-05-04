@@ -43,8 +43,13 @@ console.log(objData)
 
 
 
+// let cartData = JSON.parse(localStorage.getItem("cart")) || []
+  
+
 // Calling the append function
 
 let rightBox = document.getElementById("rightBox")
 
 appendData(objData,rightBox)
+
+
