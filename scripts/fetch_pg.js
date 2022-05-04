@@ -1,4 +1,5 @@
 
+let cartData = JSON.parse(localStorage.getItem("cart")) || []
 
 let appendData = (data,container) =>{
 
@@ -35,6 +36,18 @@ let appendData = (data,container) =>{
         btn.setAttribute("id","btn");
         btn.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>'+ " " + "ADD"
 
+        let addToCart = () => {
+             let product = {
+                 img: img_url,
+                 name: name,
+                 price: price,
+             };
+
+             cartData.push(product)
+             localStorage.setItem("cart",JSON.stringify(cartData))
+        }
+        btn.addEventListener("click",addToCart)
+
         price_div.append(prices,btn)
         box.append(img,time,title,quantity,price_div)
         container.append(box)
@@ -47,6 +60,7 @@ let appendData = (data,container) =>{
 
 let appendData2 = (data,container) =>{
 
+    // let cartData = JSON.parse(localStorage.getItem("cart")) || []
     data.forEach(({name, img_url, price}) => {
         
         let box = document.createElement("div")
@@ -79,6 +93,19 @@ let appendData2 = (data,container) =>{
         let btn = document.createElement("button")
         btn.setAttribute("id","btn");
         btn.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>'+ " " + "ADD"
+
+        let addToCart = () => {
+             let product = {
+                 img: img_url,
+                 name: name,
+                 price: price,
+             };
+
+             cartData.push(product)
+             localStorage.setItem("cart",JSON.stringify(cartData))
+        }
+        btn.addEventListener("click",addToCart)
+
 
         price_div.append(prices,btn)
         box.append(img,time,title,quantity,price_div)

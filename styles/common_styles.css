@@ -6,17 +6,17 @@
 }
 
 #container{
-    /* border:1px solid red; */
+    border:1px solid red;
     display:flex;
     justify-content: space-around;
     
 }
 #leftBox{
-    /* border:1px solid teal; */
+    border:1px solid teal;
     width:10vw;
 }
 #rightBox{
-    /* border:1px solid black; */
+    border:1px solid black;
     width:85vw;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -24,18 +24,19 @@
     color:rgb(75, 74, 74);
 }
 #box{
-    border-right:1px solid grey;
+    border-right:1px solid rgb(223, 220, 220);
     height:460px;
-    margin-bottom:10px;
+    margin-bottom:30px;
 }
 #box:hover{
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 #img_pg{
-    /* border:1px solid blue; */
+    border:1px solid blue;
     width:90%; 
     height:270px;
     margin-top:8px;
+    cursor:pointer;
 }
 #time{
     border:1px solid crimson;
@@ -52,14 +53,19 @@
 #title{
     margin-top:15px;
     margin-bottom:12px;
+    cursor:pointer;
+}
+#title:hover{
+    color:crimson;
 }
 #quantity{
     margin-top:15px;
     margin-bottom:12px;
     color:black;
+    cursor: pointer;
 }
 #price_div{
-    /* border:1px solid coral; */
+    border:1px solid coral;
     width:70%;
     display:flex;
     margin:auto;
@@ -71,6 +77,7 @@
     height:25px;
     border-radius:10px;
     font-size:14px;
+    cursor: pointer;
 }
 
 #btn{
@@ -80,4 +87,5 @@
     border:none;
     border-radius:10px;
     font-size:12px;
+    cursor: pointer;
 }
