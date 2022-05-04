@@ -116,5 +116,6 @@ let appendData2 = (data,container) =>{
         
     });
 }
+console.log(cartData)
 
 export {appendData,appendData2}
