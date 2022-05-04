@@ -39,8 +39,7 @@ let objData=[]
   console.log(objData)
 
 
-  // let cartData = JSON.parse(localStorage.getItem("cart")) || []
-
+ 
 
   // Calling the append function
 
