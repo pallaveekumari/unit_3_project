@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../cart.css"> 
+  <title>Document</title>
+</head>
+<body>
+    <h1>cartpage</h1>
+    <div id="pr_nature"></div>
+    <div>
+        <p>My Cart Items : <b><label id="cart-items">0</label></b></label></p>
+    </div>
+    <div id="top">
+    <button id="pr_continue">CONTINUE SHOPPING</button>
+    <button id="pr_proceed">PROCEED TO CHECKOUT</button>
+</div>
+    <p id="pr_get">GET YOUR ORDER DELIVERED IN 24 HOURS</p>
+    <div id="pr_name">
+        <p>Image</p>
+        <p>Name</p>
+        <!-- <p>Discount</p> -->
+        <p>Qty</p>
+        <p>PRICE</p>
+    </div>
+    <h3 id="inter">INTERNATIONAL GROCERY</h3>
+
+    <div id="container"></div>
+  
+    <!-- <button id="inc">+</button>
+    <h1 id="h1"></h1>
+    <button id="dec">-</button> -->
+
+
+     <div>
+         <div id="promo">
+             <input type="text" placeholder="enter promo code here" id="promoCode">
+             <button onclick="applypromo()">Apply Promo</button>
+         </div>
+         <div>
+             <div class="total_amount">
+                 <p>Sub Total :<label id="sub-total">00</label></p>
+                 <p>Delivery Charges :<label>50.00</label></p>
+                 <p>Discount :<label id="discount">30%</label></p>
+                 <p><b>Total :<label id="total">50.00</label></b></p>
+             </div>
+         </div>
+         <div class="bottom">
+             <button id="homepage-button">CONTINUE SHOPPING</button>
+             <button id="checkout-button">PROCEED TO CHECKOUT</button>
+         </div>
+     </div>
+     <div id="animation">
+        <p id="endpage1"></p>
+     </div>
+</body>
+</html>
+<script src="../cart.js"></script>
