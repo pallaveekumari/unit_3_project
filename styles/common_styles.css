@@ -1,0 +1,91 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+#container{
+    border:1px solid red;
+    display:flex;
+    justify-content: space-around;
+    
+}
+#leftBox{
+    border:1px solid teal;
+    width:10vw;
+}
+#rightBox{
+    border:1px solid black;
+    width:85vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    color:rgb(75, 74, 74);
+}
+#box{
+    border-right:1px solid rgb(223, 220, 220);
+    height:460px;
+    margin-bottom:30px;
+}
+#box:hover{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+#img_pg{
+    border:1px solid blue;
+    width:90%; 
+    height:270px;
+    margin-top:8px;
+    cursor:pointer;
+}
+#time{
+    border:1px solid crimson;
+    width:60%;
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+    color:crimson;
+    border-radius:10px;
+    padding:2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#title{
+    margin-top:15px;
+    margin-bottom:12px;
+    cursor:pointer;
+}
+#title:hover{
+    color:crimson;
+}
+#quantity{
+    margin-top:15px;
+    margin-bottom:12px;
+    color:black;
+    cursor: pointer;
+}
+#price_div{
+    border:1px solid coral;
+    width:70%;
+    display:flex;
+    margin:auto;
+    justify-content: space-around;
+}
+#p_pg{
+    border:1px solid gray;
+    padding:10px 10px 0px 10px;
+    height:25px;
+    border-radius:10px;
+    font-size:14px;
+    cursor: pointer;
+}
+
+#btn{
+    background-color: #92be4d;
+    color:white;
+    width:7vw;
+    border:none;
+    border-radius:10px;
+    font-size:12px;
+    cursor: pointer;
+}

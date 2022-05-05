@@ -1,5 +1,11 @@
 
 
+import {appendData} from "./fetch_pg.js";
+
+
+
+// Data Collection
+
 let  objData = []
 
 function Products(n,i,p){
@@ -54,3 +60,16 @@ let p20 = new Products("Pineapple","https://d1z88p83zuviay.cloudfront.net/Produc
 objData.push(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20)
 
 console.log(objData)
+
+
+
+
+// Calling the append function
+
+let rightBox = document.getElementById("rightBox")
+
+appendData(objData,rightBox)
+
+
+
+
